@@ -10,8 +10,9 @@ class TextAreaEmoji extends Module {
         super(quill, options);
 
         this.quill = quill;
-        this.container  = document.createElement('div');
+        this.container  = document.createElement('button');
         this.container.classList.add('textarea-emoji-control');
+        this.container.container.type='button';
         this.container.style.position   = "absolute";
         this.container.innerHTML = options.buttonIcon;
         this.quill.container.appendChild(this.container);
